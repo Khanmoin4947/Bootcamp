@@ -1,6 +1,6 @@
 n=42
 
-while n!=0:
+while True:
     input_1=int(input("Enter your number: "))
 
     if input_1==n:
