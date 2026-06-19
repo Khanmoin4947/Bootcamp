@@ -7,5 +7,5 @@ print(odd)
 squares=list(map(lambda x: x**2, n))
 print(squares)
 
-sum_of_squares=sum(squares)
-print(sum_of_squares)
+sum_squares=sum(squares)
+print(sum_squares)

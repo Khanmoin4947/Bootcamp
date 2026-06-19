@@ -8,14 +8,8 @@ def operators(op):
       elif op == '/':
          return lambda x, y: x / y
       else:
-         raise ValueError('Invalid operator')
+         print("Invalid operator")
       
-
-add = operators('+')
-subtract = operators('-')
-multiply = operators('*')
-divide = operators('/')
-
 input1 = float(input("Enter an num1: "))
 input2 = float(input("Enter an num2: "))
 op = input("Enter an operator (+, -, *, /): ")

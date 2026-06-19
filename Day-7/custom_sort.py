@@ -10,3 +10,4 @@ x=sorted(dict, key=lambda x: list(x.values())[0], reverse=True)
 print(x)
 
 
+b=int(input("Enter a number: "))
