@@ -1,20 +1,18 @@
-def get_int():
-    while True:
-        try:
-            num = int(input("Enter a positive integer: "))
-            if num < 0:
-                raise NegativeNumberError("Negative numbers are not allowed!")
-            return num
-
-        except ValueError:
-            print("Invalid input! Please enter an integer.")
-
-        except NegativeNumberError as e:
-            print(e)
-
 class NegativeNumberError(Exception):
     pass
 
-get_int()
+while True:
+    try:
+        n = int(input("Enter a positive number: "))
 
+        if n < 0:
+            raise NegativeNumberError
 
+        print("Valid Number =", n)
+        break
+
+    except ValueError:
+        print("Enter integers only!")
+
+    except NegativeNumberError:
+        print("Negative number not allowed!")
