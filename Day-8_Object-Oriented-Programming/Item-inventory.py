@@ -25,5 +25,3 @@ for product in products:
     grand_total += value
     print(f"{product.name}{value}")
 print("Grand Total Inventory Value:", grand_total)
-
-    
