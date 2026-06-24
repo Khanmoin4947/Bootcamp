@@ -24,7 +24,6 @@ class Book:
         self.__copies += n
 
 
-# Example
 b1 = Book("97812345", "Python", "John", 10)
 
 b1.checkout(3)
