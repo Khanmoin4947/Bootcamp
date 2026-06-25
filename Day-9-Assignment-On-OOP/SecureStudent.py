@@ -25,9 +25,8 @@ class Student:
 
 s1 = Student(101, [80, 90, 85], "A")
 s2 = Student(102, [70, 75, 80], "B")
+print(s1.gpa)
 
-print("GPA:", s1.gpa)
 s1.gpa = [90, 95, 88]
-
-print("New GPA:", s1.gpa)
+print("New:", s1.gpa)
 print("Total Students:", Student.count())

@@ -23,11 +23,8 @@ class Book:
             raise ValueError("Invalid return operation")
         self.__copies += n
 
-
-b1 = Book("97812345", "Python", "John", 10)
-
+b1 = Book("987654321", "Python", "navjot", 10)
 b1.checkout(3)
 print("Available:", b1.available)
-
 b1.return_book(2)
 print("Available:", b1.available)

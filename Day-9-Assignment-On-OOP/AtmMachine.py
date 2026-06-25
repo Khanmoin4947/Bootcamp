@@ -20,7 +20,6 @@ class ATM:
         if not self.__authenticated:
             print("Please authenticate first")
             return
-
         self.__balance += amt
         print("Deposited:", amt)
 
@@ -28,28 +27,20 @@ class ATM:
         if not self.__authenticated:
             print("Please authenticate first")
             return
-
         if amt > 20000:
-            raise ValueError("Maximum withdrawal limit is ₹20,000")
-
+            print("Maximum withdrawal limit is ₹20,000")
         if amt > self.__balance:
-            raise ValueError("Insufficient Balance")
+            print("Insufficient Balance")
+        else:
+            self.__balance -= amt
+            print("Withdrawn:", amt)
 
-        self.__balance -= amt
-        print("Withdrawn:", amt)
-
-    def mini_statement(self):
-        print("Owner:", self._owner)
-        print("Balance:", self.__balance)
-
-
-# Example
+    
+    
 atm = ATM(1234, 50000, "Moin")
 
 atm.authenticate(1234)
 atm.deposit(5000)
 atm.withdraw(10000)
-
-atm.mini_statement()
 
 print("Current Balance:", atm.balance)
