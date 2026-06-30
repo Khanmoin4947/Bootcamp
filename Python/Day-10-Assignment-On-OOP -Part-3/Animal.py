@@ -19,7 +19,6 @@ class Dog(Animal):
         return f"{self.name} fetches the ball!"
 
 
-# Example usage
 d = Dog("Bruno", "Labrador")
 print(d.speak())
 print(d.fetch())
