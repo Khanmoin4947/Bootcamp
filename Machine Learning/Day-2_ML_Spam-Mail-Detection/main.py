@@ -11,13 +11,13 @@ import os
 # Load dataset
 data = pd.read_csv('data.csv')
 
-# Inspect dataset
-print(data.info())
-print(data.isna().sum())
+# # Inspect dataset
+# print(data.info())
+# print(data.isna().sum())
 
 # Add binary spam column
 data['Spam'] = data['Category'].apply(lambda x: 1 if x == 'spam' else 0)
-print(data.head(5))
+# print(data.head(5))
 
 # Train-test split
 from sklearn.model_selection import train_test_split
